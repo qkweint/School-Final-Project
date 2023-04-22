@@ -1,0 +1,63 @@
+﻿@page "/customereEdit/{Id:int}"
+@inject NavigationManager uriHelper
+@inject IJSRuntime js
+@using ModelsClass
+@using TablesDB
+<div class="form-signin text-center w-50">
+    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Edit</h1>
+
+    <label for="inputName" class="sr-only">Name</label>
+    <input @bind-value="Name" type="text" id="inputEmail" class="form-control m-1" placeholder="Name" required autofocus>
+
+    <label for="inputName" class="sr-only">Password</label>
+    <input @bind-value="Pass" type="password" pass="inputEmail" class="form-control m-1" required autofocus>
+
+    <button @onclick="doEdit" class="btn btn-lg btn-primary btn-block m-1" type="submit">Update</button>
+</div>
+
+
+
+
+@code {
+    [Parameter] public int id { get; set; }
+    public string Pass { get; set; }
+    private string Name = "";
+    private Customer customer;
+
+
+    protected override void OnParametersSet()
+    {
+        if (id == null)
+            id = 0;
+        else
+        {
+            customer = new Customer();
+            CustomerDB customerDB = new CustomerDB();
+            customer = customerDB.SelectByPk(id);
+            Name = customer.CustomerName;
+            Pass = customer.CustomerPassword;
+        }
+    }
+
+
+    async Task doEdit()
+    {
+        CustomerDB customerDB = new CustomerDB();
+        customer = new Customer();
+        customer.CustomerName = Name;
+        customer.CustomerID = id;
+        customer.CustomerPassword = Pass;
+        int n = customerDB.Update(customer);
+        if (n > 0)
+        {
+            await js.InvokeVoidAsync("alert", $"Updated Successfully!");
+            uriHelper.NavigateTo("/");
+        }
+        else
+        {
+            await js.InvokeVoidAsync("alert", $"Update failed!");
+            uriHelper.NavigateTo("/");
+        }
+    }
+}

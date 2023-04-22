@@ -1,0 +1,58 @@
+﻿@page "/"
+@using TablesDB
+@using ModelsClass
+@inject IJSRuntime js
+
+<span class="h1">My Customers</span>
+
+
+@if (list == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table w-50">
+        <thead>
+            <tr>
+                <th>Customers Name</th>
+                <th>Customers ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Customer item in list)
+            {
+                <tr>
+                    <td><a href="customerDetails/@item.CustomerID.ToString()"> @item.CustomerName</a></td>
+                    <td>@item.CustomerID</td>
+                    <td>
+                        <a class="btn btn-success" href="customereEdit/@item.CustomerID.ToString()">Edit</a>
+                        <button class="btn btn-danger" @onclick="@(() => Delete(@item.CustomerID))">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-success" href="addCustomer">Add Customer</a>
+}
+
+
+@code {
+    List<Customer> list;
+    protected override void OnInitialized()
+    {
+        CustomerDB customerDB = new CustomerDB();
+        list = (List<Customer>)customerDB.SelectAll();
+    }
+    async Task Delete(int id)
+    {
+        CustomerDB customerDB = new CustomerDB();
+        Customer customer = customerDB.SelectByPk(id);
+        if (await js.InvokeAsync<bool>("confirm", $"Do you want to delete {customer.CustomerName}'s Record?"))
+        {
+            customerDB.Delete(customer);
+            OnInitialized();
+        }
+    }
+}
+

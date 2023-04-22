@@ -1,0 +1,12 @@
+C:\Users\CSS\source\repos\ModelsClass\bin\Debug\net7.0\ModelsClass.deps.json
+C:\Users\CSS\source\repos\ModelsClass\bin\Debug\net7.0\ModelsClass.dll
+C:\Users\CSS\source\repos\ModelsClass\bin\Debug\net7.0\ModelsClass.pdb
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\ModelsClass.csproj.AssemblyReference.cache
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\ModelsClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\ModelsClass.AssemblyInfoInputs.cache
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\ModelsClass.AssemblyInfo.cs
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\ModelsClass.csproj.CoreCompileInputs.cache
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\ModelsClass.dll
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\refint\ModelsClass.dll
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\ModelsClass.pdb
+C:\Users\CSS\source\repos\ModelsClass\obj\Debug\net7.0\ref\ModelsClass.dll

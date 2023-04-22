@@ -1,0 +1,40 @@
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\Console MainProject.exe
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\Console MainProject.deps.json
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\Console MainProject.runtimeconfig.json
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\Console MainProject.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\Console MainProject.pdb
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.csproj.AssemblyReference.cache
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.AssemblyInfoInputs.cache
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.AssemblyInfo.cs
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.csproj.CoreCompileInputs.cache
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.dll
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\refint\Console MainProject.dll
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.pdb
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.genruntimeconfig.cache
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\ref\Console MainProject.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\K4os.Compression.LZ4.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\K4os.Hash.xxHash.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\MySql.Data.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\ZstdNet.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\BouncyCastle.Crypto.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\DBClass.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\ModelsClass.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\TablesDB.dll
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\TablesDB.pdb
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\DBClass.pdb
+C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\ModelsClass.pdb
+C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.csproj.CopyComplete

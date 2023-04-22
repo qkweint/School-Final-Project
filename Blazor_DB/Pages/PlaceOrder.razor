@@ -1,0 +1,42 @@
+﻿@page "/placeOrder"
+@inject NavigationManager uriHelper
+@inject IJSRuntime js
+@using ModelsClass
+@using TablesDB
+@inject Customer c
+<div class="form-signin text-center w-50">
+    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Place Order</h1>
+    <input @bind-value="Name" type="text" id="inputEmail" class="form-control m-1" placeholder="ID" required autofocus>
+
+    <button @onclick="Add" class="btn btn-lg btn-primary btn-block m-1" type="submit">Place</button>
+</div>
+
+
+
+
+@code {
+    [Parameter] public int id { get; set; }
+    private string Name = "";
+    private string Id;
+    private Order order;
+
+
+    async Task Add()
+    {
+        OrderDB orderdb = new OrderDB();
+        order = new Order();
+        order.customerID = c.CustomerID;
+        bool n = orderdb.Insert(order);
+        if (n == true)
+        {
+            await js.InvokeVoidAsync("alert", $"Order Placed!");
+            uriHelper.NavigateTo("/");
+        }
+        else
+        {
+            await js.InvokeVoidAsync("alert", $"Order wasn't Placed!");
+            uriHelper.NavigateTo("/");
+        }
+    }
+}
