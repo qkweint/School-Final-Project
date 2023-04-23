@@ -1,0 +1,17 @@
+C:\Users\CSS\source\repos\ClassLibrary1\bin\Debug\net7.0\TablesDB.deps.json
+C:\Users\CSS\source\repos\ClassLibrary1\bin\Debug\net7.0\TablesDB.dll
+C:\Users\CSS\source\repos\ClassLibrary1\bin\Debug\net7.0\TablesDB.pdb
+C:\Users\CSS\source\repos\ClassLibrary1\bin\Debug\net7.0\DBClass.dll
+C:\Users\CSS\source\repos\ClassLibrary1\bin\Debug\net7.0\ModelsClass.dll
+C:\Users\CSS\source\repos\ClassLibrary1\bin\Debug\net7.0\DBClass.pdb
+C:\Users\CSS\source\repos\ClassLibrary1\bin\Debug\net7.0\ModelsClass.pdb
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\TablesDB.csproj.AssemblyReference.cache
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\TablesDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\TablesDB.AssemblyInfoInputs.cache
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\TablesDB.AssemblyInfo.cs
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\TablesDB.csproj.CoreCompileInputs.cache
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\TablesDB.csproj.CopyComplete
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\TablesDB.dll
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\refint\TablesDB.dll
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\TablesDB.pdb
+C:\Users\CSS\source\repos\ClassLibrary1\obj\Debug\net7.0\ref\TablesDB.dll
