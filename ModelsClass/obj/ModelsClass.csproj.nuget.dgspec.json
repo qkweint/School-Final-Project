@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CSS\\source\\repos\\ModelsClass\\ModelsClass.csproj": {}
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CSS\\source\\repos\\ModelsClass\\ModelsClass.csproj": {
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\ModelsClass\\ModelsClass.csproj",
+        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
         "projectName": "ModelsClass",
-        "projectPath": "C:\\Users\\CSS\\source\\repos\\ModelsClass\\ModelsClass.csproj",
+        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
         "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CSS\\source\\repos\\ModelsClass\\obj\\",
+        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

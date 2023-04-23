@@ -954,11 +954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\DBproject\\Console MainProject.csproj",
+      "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DBproject\\Console MainProject.csproj",
       "projectName": "Console MainProject",
-      "projectPath": "C:\\Users\\CSS\\source\\repos\\DBproject\\Console MainProject.csproj",
+      "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DBproject\\Console MainProject.csproj",
       "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CSS\\source\\repos\\DBproject\\obj\\",
+      "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DBproject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -982,14 +982,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\CSS\\source\\repos\\ClassLibrary1\\TablesDB.csproj": {
-              "projectPath": "C:\\Users\\CSS\\source\\repos\\ClassLibrary1\\TablesDB.csproj"
+            "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {
+              "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj"
             },
-            "C:\\Users\\CSS\\source\\repos\\DB\\DBClass.csproj": {
-              "projectPath": "C:\\Users\\CSS\\source\\repos\\DB\\DBClass.csproj"
+            "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
+              "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj"
             },
-            "C:\\Users\\CSS\\source\\repos\\ModelsClass\\ModelsClass.csproj": {
-              "projectPath": "C:\\Users\\CSS\\source\\repos\\ModelsClass\\ModelsClass.csproj"
+            "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
+              "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj"
             }
           }
         }

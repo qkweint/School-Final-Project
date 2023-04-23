@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CSS\\source\\repos\\DB\\DBClass.csproj": {}
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CSS\\source\\repos\\DB\\DBClass.csproj": {
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\DB\\DBClass.csproj",
+        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
         "projectName": "DBClass",
-        "projectPath": "C:\\Users\\CSS\\source\\repos\\DB\\DBClass.csproj",
+        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
         "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CSS\\source\\repos\\DB\\obj\\",
+        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
