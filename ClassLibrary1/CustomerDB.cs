@@ -2,13 +2,13 @@
 using DB;
 namespace TablesDB
 {
-    public class CustomerDB : BaseDB
+    public class CustomerDB : BaseDB<Customer>
     {
         protected override string GetTableName()
         {
             return "Customers";
         }
-        protected override object CreateModel(object[] row)
+        protected override Customer CreateModel(object[] row)
         {
             Customer c = new Customer();
             c.CustomerID = int.Parse(row[0].ToString());
@@ -24,7 +24,7 @@ namespace TablesDB
             c.CustomerPassword = row[2].ToString();
             return c;
         }
-        protected override object CreateListModel(List<object[]> rows)
+        protected override List<Customer> CreateListModel(List<object[]> rows)
         {
             List<Customer> custList = new List<Customer>();
             foreach (object[] item in rows)

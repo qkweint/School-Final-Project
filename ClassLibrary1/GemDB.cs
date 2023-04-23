@@ -1,5 +1,6 @@
 ﻿using DB;
 using ModelsClass;
+using MySqlX.XDevAPI.Relational;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,10 +24,30 @@ namespace TablesDB
             g.price = int.Parse(row[4].ToString());
             return g;
         }
+        protected override async Task<Gem> CreateModelAsync(object[] row)
+        {
+            Gem g = new Gem();
+            g.gemID = int.Parse(row[0].ToString());
+            g.name = row[1].ToString();
+            g.weight = double.Parse(row[3].ToString());
+            g.price = int.Parse(row[4].ToString());
+            return g;
+        }
         protected override object CreateListModel(List<object[]> rows)
         {
             List<Gem> GemList = new List<Gem>();
             foreach (object[] item in rows)
+            {
+                Gem g = new Gem();
+                g = (Gem)CreateModel(item);
+                GemList.Add(g);
+            }
+            return GemList;
+        }
+        protected override async Task<List<Gem>> CreateListModelAsync(object[] row)
+        {
+            List<Gem> GemList = new List<Gem>();
+            foreach (object[] item in row)
             {
                 Gem g = new Gem();
                 g = (Gem)CreateModel(item);

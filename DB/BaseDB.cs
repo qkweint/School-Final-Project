@@ -4,15 +4,16 @@ using System.Data.Common;
 
 namespace DB
 {
-    public abstract class BaseDB : DB
+    public abstract class BaseDB<T> : DB
     {
         protected MySqlDataReader reader;
         protected abstract string GetTableName();
-        protected abstract object GetRowByPK(object pk);
-        protected abstract object CreateModel(object[] row);
-        protected abstract object CreateModelAsync(object[] row);
-        protected abstract object CreateListModel(List<object[]> rows);
-        protected abstract object CreateListModelAsync(List<object[]> rows);
+        protected abstract T GetRowByPK(object pk);
+        protected abstract Task<T> GetRowByPKAsync(object pk);
+        protected abstract T CreateModel(object[] row);
+        protected abstract Task<T> CreateModelAsync(object[] row);
+        protected abstract List<T> CreateListModel(List<object[]> rows);
+        protected abstract Task<List<T>> CreateListModelAsync(List<object[]> rows);
 
         public object SelectAll()
         {

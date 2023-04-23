@@ -52,3 +52,14 @@ C:\Users\CSS\source\repos\Blazor_DB\obj\Debug\net7.0\refint\Blazor_DB.dll
 C:\Users\CSS\source\repos\Blazor_DB\obj\Debug\net7.0\Blazor_DB.pdb
 C:\Users\CSS\source\repos\Blazor_DB\obj\Debug\net7.0\Blazor_DB.genruntimeconfig.cache
 C:\Users\CSS\source\repos\Blazor_DB\obj\Debug\net7.0\ref\Blazor_DB.dll
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.csproj.AssemblyReference.cache
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.AssemblyInfoInputs.cache
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.AssemblyInfo.cs
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.csproj.CoreCompileInputs.cache
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.RazorAssemblyInfo.cache
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.RazorAssemblyInfo.cs
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.dll
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\refint\Blazor_DB.dll
+C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\obj\Debug\net7.0\Blazor_DB.pdb
