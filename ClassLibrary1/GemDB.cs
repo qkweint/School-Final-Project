@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace TablesDB
 {
-    public class GemDB : BaseDB
+    public class GemDB : BaseDB<Gem>
     {
         protected override string GetTableName()
         {
             return "gems";
         }
-        protected override object CreateModel(object[] row)
+        protected override Gem CreateModel(object[] row)
         {
             Gem g = new Gem();
             g.gemID = int.Parse(row[0].ToString());
@@ -33,7 +33,7 @@ namespace TablesDB
             g.price = int.Parse(row[4].ToString());
             return g;
         }
-        protected override object CreateListModel(List<object[]> rows)
+        protected override List<Gem> CreateListModel(List<object[]> rows)
         {
             List<Gem> GemList = new List<Gem>();
             foreach (object[] item in rows)
@@ -44,10 +44,10 @@ namespace TablesDB
             }
             return GemList;
         }
-        protected override async Task<List<Gem>> CreateListModelAsync(object[] row)
+        protected override async Task<List<Gem>> CreateListModelAsync(List<object[]> rows)
         {
             List<Gem> GemList = new List<Gem>();
-            foreach (object[] item in row)
+            foreach (object[] item in rows)
             {
                 Gem g = new Gem();
                 g = (Gem)CreateModel(item);
@@ -68,7 +68,18 @@ namespace TablesDB
                 return null;
         }
 
-        protected override object GetRowByPK(object pk)
+        protected override Gem GetRowByPK(object pk)
+        {
+            string sql = @"SELECT * FROM gems WHERE
+			 	(gemID = @id)";
+            cmd.Parameters.AddWithValue("@id", int.Parse(pk.ToString()));
+            List<Gem> list = (List<Gem>)SelectAll(sql);
+            if (list.Count == 1)
+                return list[0];
+            else
+                return null;
+        }
+        protected override async Task<Gem> GetRowByPKAsync(object pk)
         {
             string sql = @"SELECT * FROM gems WHERE
 			 	(gemID = @id)";
@@ -106,6 +117,8 @@ namespace TablesDB
             param.Add("gemID", gem.gemID.ToString());
             return base.Delete(param);
         }
+
+
 
     }
 }

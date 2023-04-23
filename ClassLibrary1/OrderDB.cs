@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace TablesDB
 {
-    public class OrderDB : BaseDB
+    public class OrderDB : BaseDB<Order>
     {
         protected override string GetTableName()
         {
             return "orders";
         }
-        protected override object CreateModel(object[] row)
+        protected override Order CreateModel(object[] row)
         {
             Order o = new Order();
             o.orderID = int.Parse(row[0].ToString());
@@ -23,7 +23,17 @@ namespace TablesDB
 
             return o;
         }
-        protected override object CreateListModel(List<object[]> rows)
+        protected override async Task<Order> CreateModelAsync(object[] row)
+        {
+            Order o = new Order();
+            o.orderID = int.Parse(row[0].ToString());
+            o.customerID = int.Parse(row[1].ToString());
+            o.ringID = int.Parse(row[2].ToString());
+
+            return o;
+        }
+
+        protected override List<Order> CreateListModel(List<object[]> rows)
         {
             List<Order> ordList = new List<Order>();
             foreach (object[] item in rows)
@@ -34,6 +44,18 @@ namespace TablesDB
             }
             return ordList;
         }
+        protected override async Task<List<Order>> CreateListModelAsync(List<object[]> rows)
+        {
+            List<Order> ordList = new List<Order>();
+            foreach (object[] item in rows)
+            {
+                Order o = new Order();
+                o = (Order)CreateModel(item);
+                ordList.Add(o);
+            }
+            return ordList;
+        }
+
 
         // specific queries
         public Order SelectByPk(int id)
@@ -47,7 +69,7 @@ namespace TablesDB
                 return null;
         }
 
-        protected override object GetRowByPK(object pk)
+        protected override Order GetRowByPK(object pk)
         {
             string sql = @"SELECT orders.* FROM orders WHERE
 			 	(orderID = @id)";
@@ -58,6 +80,18 @@ namespace TablesDB
             else
                 return null;
         }
+        protected override async Task<Order> GetRowByPKAsync(object pk)
+        {
+            string sql = @"SELECT orders.* FROM orders WHERE
+			 	(orderID = @id)";
+            cmd.Parameters.AddWithValue("@id", int.Parse(pk.ToString()));
+            List<Order> list = (List<Order>)SelectAll(sql);
+            if (list.Count == 1)
+                return list[0];
+            else
+                return null;
+        }
+        
         public bool Insert(Order order)
         {
             Dictionary<string, string> val = new Dictionary<string, string>();
@@ -92,5 +126,11 @@ namespace TablesDB
             val.Add("ringID", order.ringID.ToString());
             return base.Insert(val) != -1;
         }
+
+        
+
+        
+
+        
     }
 }

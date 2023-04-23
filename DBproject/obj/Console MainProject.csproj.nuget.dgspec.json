@@ -1,45 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DBproject\\Console MainProject.csproj": {}
+    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DBproject\\Console MainProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {
+    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj",
+        "projectUniqueName": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj",
         "projectName": "TablesDB",
-        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj",
-        "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj",
+        "packagesPath": "C:\\Users\\qkwei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qkwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
-                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj"
+              "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj": {
+                "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj"
               },
-              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
-                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj"
+              "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj": {
+                "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj"
               }
             }
           }
@@ -73,45 +70,42 @@
         }
       }
     },
-    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DBproject\\Console MainProject.csproj": {
+    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DBproject\\Console MainProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DBproject\\Console MainProject.csproj",
+        "projectUniqueName": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DBproject\\Console MainProject.csproj",
         "projectName": "Console MainProject",
-        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DBproject\\Console MainProject.csproj",
-        "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DBproject\\obj\\",
+        "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DBproject\\Console MainProject.csproj",
+        "packagesPath": "C:\\Users\\qkwei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DBproject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qkwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {
-                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj"
+              "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj": {
+                "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj"
               },
-              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
-                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj"
+              "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj": {
+                "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj"
               },
-              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
-                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj"
+              "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj": {
+                "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj"
               }
             }
           }
@@ -125,6 +119,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            },
+            "MySql.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -145,31 +149,28 @@
         }
       }
     },
-    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
+    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
+        "projectUniqueName": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj",
         "projectName": "DBClass",
-        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
-        "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\obj\\",
+        "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj",
+        "packagesPath": "C:\\Users\\qkwei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qkwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -213,31 +214,28 @@
         }
       }
     },
-    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
+    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
+        "projectUniqueName": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj",
         "projectName": "ModelsClass",
-        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
-        "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\obj\\",
+        "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj",
+        "packagesPath": "C:\\Users\\qkwei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qkwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

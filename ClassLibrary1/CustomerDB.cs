@@ -59,7 +59,19 @@ namespace TablesDB
                 return null;
         }
 
-        protected override object GetRowByPK(object pk)
+        protected override Customer GetRowByPK(object pk)
+        {
+            string sql = @"SELECT customers.* FROM customers WHERE
+			 	(CustomerID = @id)";
+            cmd.Parameters.AddWithValue("@id", int.Parse(pk.ToString()));
+            List<Customer> list = (List<Customer>)SelectAll(sql);
+            if (list.Count == 1)
+                return list[0];
+            else
+                return null;
+        }
+
+        protected override async Task<Customer> GetRowByPKAsync(object pk)
         {
             string sql = @"SELECT customers.* FROM customers WHERE
 			 	(CustomerID = @id)";

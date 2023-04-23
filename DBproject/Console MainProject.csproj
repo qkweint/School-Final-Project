@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+    <PackageReference Include="MySql.Data.EntityFramework" Version="8.0.33" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\TablesDB.csproj" />
     <ProjectReference Include="..\DB\DBClass.csproj" />
     <ProjectReference Include="..\ModelsClass\ModelsClass.csproj" />

@@ -22,3 +22,15 @@ C:\Users\CSS\source\repos\School-Final-Project\DB\obj\Debug\net7.0\DBClass.dll
 C:\Users\CSS\source\repos\School-Final-Project\DB\obj\Debug\net7.0\refint\DBClass.dll
 C:\Users\CSS\source\repos\School-Final-Project\DB\obj\Debug\net7.0\DBClass.pdb
 C:\Users\CSS\source\repos\School-Final-Project\DB\obj\Debug\net7.0\ref\DBClass.dll
+C:\Users\qkwei\source\repos\gadiproj\DB\bin\Debug\net7.0\DBClass.deps.json
+C:\Users\qkwei\source\repos\gadiproj\DB\bin\Debug\net7.0\DBClass.dll
+C:\Users\qkwei\source\repos\gadiproj\DB\bin\Debug\net7.0\DBClass.pdb
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\DBClass.csproj.AssemblyReference.cache
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\DBClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\DBClass.AssemblyInfoInputs.cache
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\DBClass.AssemblyInfo.cs
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\DBClass.csproj.CoreCompileInputs.cache
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\DBClass.dll
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\refint\DBClass.dll
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\DBClass.pdb
+C:\Users\qkwei\source\repos\gadiproj\DB\obj\Debug\net7.0\ref\DBClass.dll

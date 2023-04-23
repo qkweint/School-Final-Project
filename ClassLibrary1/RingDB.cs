@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace TablesDB
 {
-    public class RingDB : BaseDB
+    public class RingDB : BaseDB<Ring>
     {
         protected override string GetTableName()
         {
             return "rings";
         }
-        protected override object CreateModel(object[] row)
+        protected override Ring CreateModel(object[] row)
         {
             Ring r = new Ring();
             r.ringID= int.Parse(row[0].ToString());
@@ -22,7 +22,27 @@ namespace TablesDB
             r.gemID = int.Parse(row[2].ToString());
             return r;
         }
-        protected override object CreateListModel(List<object[]> rows)
+        protected override async Task<Ring> CreateModelAsync(object[] row)
+        {
+            Ring r = new Ring();
+            r.ringID = int.Parse(row[0].ToString());
+            r.metal = row[1].ToString();
+            r.gemID = int.Parse(row[2].ToString());
+            return r;
+        }
+
+        protected override List<Ring> CreateListModel(List<object[]> rows)
+        {
+            List<Ring> ringList = new List<Ring>();
+            foreach (object[] item in rows)
+            {
+                Ring r = new Ring();
+                r = (Ring)CreateModel(item);
+                ringList.Add(r);
+            }
+            return ringList;
+        }
+        protected override async Task<List<Ring>> CreateListModelAsync(List<object[]> rows)
         {
             List<Ring> ringList = new List<Ring>();
             foreach (object[] item in rows)
@@ -46,7 +66,7 @@ namespace TablesDB
                 return null;
         }
 
-        protected override object GetRowByPK(object pk)
+        protected override Ring GetRowByPK(object pk)
         {
             string sql = @"SELECT rings.* FROM rings WHERE
 			 	(ringID = @id)";
@@ -56,6 +76,10 @@ namespace TablesDB
                 return list[0];
             else
                 return null;
+        }
+        protected override Task<Ring> GetRowByPKAsync(object pk)
+        {
+            throw new NotImplementedException();
         }
         public bool Insert(Ring ring)
         {
@@ -82,5 +106,11 @@ namespace TablesDB
             param.Add("ringID", ring.ringID.ToString());
             return base.Delete(param);
         }
+
+        
+
+       
+
+        
     }
 }
