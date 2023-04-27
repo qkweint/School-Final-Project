@@ -58,6 +58,16 @@ namespace TablesDB
             else
                 return null;
         }
+        public async Task<Customer> SelectByPkAsync(string id)
+        {
+            string sql = @"SELECT customers.* FROM customers WHERE (CustomerID = @id)";
+            cmd.Parameters.AddWithValue("@id", id);
+            List<Customer> list = (List<Customer>)SelectAll(sql);
+            if (list.Count == 1)
+                return list[0];
+            else
+                return null;
+        }
 
         protected override Customer GetRowByPK(object pk)
         {
@@ -108,5 +118,19 @@ namespace TablesDB
             param.Add("customerID", customer.CustomerID.ToString());
             return base.Delete(param);
         }
+        public async Task<Customer> login(string customerName, string password)
+        {
+            string sql = @$"SELECT * FROM customers
+                            WHERE customerName='{customerName}' AND customerPassword = '{password}';";
+            Customer res = await exeNONqueryAsync(sql);
+            if (res != null)
+            {
+                Customer customer = (Customer) await SelectByPkAsync(res.CustomerID.ToString());
+                return customer;
+            }
+            else
+                return null;
+        }
     }
+
 }

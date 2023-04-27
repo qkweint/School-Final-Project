@@ -1,6 +1,7 @@
 ﻿using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
 using System.Data.Common;
+using System.Runtime.CompilerServices;
 
 namespace DB
 {
@@ -110,6 +111,30 @@ namespace DB
                     DB.conn.Close();
             }
             return num;
+        }
+        protected async Task<T> exeNONqueryAsync(string query)
+        {
+            object item = new object();
+            try
+            {
+                base.cmd.CommandText = query;
+                if (DB.conn.State != System.Data.ConnectionState.Open)
+                    DB.conn.Open();
+                if (base.cmd.Connection.State != System.Data.ConnectionState.Open)
+                    base.cmd.Connection = DB.conn;
+                 item = base.cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message + "\nsql:" + cmd.CommandText);
+            }
+            finally
+            {
+                base.cmd.Parameters.Clear();
+                if (DB.conn.State == System.Data.ConnectionState.Open)
+                    DB.conn.Close();
+            }
+            return (T)item;
         }
         public int Insert(Dictionary<string, string> FindValue) 
         {

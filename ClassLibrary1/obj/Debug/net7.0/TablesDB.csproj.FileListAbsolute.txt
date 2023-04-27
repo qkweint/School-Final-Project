@@ -40,3 +40,12 @@ C:\Users\qkwei\source\repos\gadiproj\ClassLibrary1\bin\Debug\net7.0\DBClass.pdb
 C:\Users\qkwei\source\repos\gadiproj\ClassLibrary1\bin\Debug\net7.0\ModelsClass.pdb
 C:\Users\qkwei\source\repos\gadiproj\ClassLibrary1\obj\Debug\net7.0\TablesDB.csproj.CopyComplete
 C:\Users\qkwei\source\repos\gadiproj\ClassLibrary1\obj\Debug\net7.0\ref\TablesDB.dll
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\bin\Debug\net7.0\TablesDB.deps.json
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\bin\Debug\net7.0\TablesDB.dll
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\bin\Debug\net7.0\TablesDB.pdb
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\bin\Debug\net7.0\DBClass.dll
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\bin\Debug\net7.0\ModelsClass.dll
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\bin\Debug\net7.0\DBClass.pdb
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\bin\Debug\net7.0\ModelsClass.pdb
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\obj\Debug\net7.0\TablesDB.csproj.CopyComplete
+C:\Users\CSS\source\repos\School-Final-Project\ClassLibrary1\obj\Debug\net7.0\ref\TablesDB.dll
