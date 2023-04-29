@@ -92,6 +92,17 @@ namespace TablesDB
             else
                 return null;
         }
+        protected async Task<Customer> GetRowByUKAsync(string uk)
+        {
+            string sql = @"SELECT * FROM customers WHERE
+			 	(customerName = @name)";
+            cmd.Parameters.AddWithValue("@name", uk.ToString());
+            List<Customer> list = (List<Customer>)SelectAll(sql);
+            if (list.Count == 1)
+                return list[0];
+            else
+                return null;
+        }
 
         public bool Insert(Customer customer)
         {
@@ -120,13 +131,15 @@ namespace TablesDB
         }
         public async Task<Customer> login(string customerName, string password)
         {
-            string sql = @$"SELECT * FROM customers
-                            WHERE customerName='{customerName}' AND customerPassword = '{password}';";
-            Customer res = await exeNONqueryAsync(sql);
-            if (res != null)
+            Customer c = (Customer) await GetRowByUKAsync(customerName);
+            string sql = "";
+            if (c != null)
+                sql = @$"SELECT * FROM customers
+                                WHERE customerID='{c.CustomerID}' AND customerPassword = '{password}';";
+            List<Customer> res = (List<Customer>)SelectAll(sql);
+            if (res.Count == 1)
             {
-                Customer customer = (Customer) await SelectByPkAsync(res.CustomerID.ToString());
-                return customer;
+                return c;
             }
             else
                 return null;

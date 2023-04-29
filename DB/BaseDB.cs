@@ -112,9 +112,9 @@ namespace DB
             }
             return num;
         }
-        protected async Task<T> exeNONqueryAsync(string query)
+        protected async Task<int> exeNONqueryAsync(string query)
         {
-            object item = new object();
+            int num = 0;
             try
             {
                 base.cmd.CommandText = query;
@@ -122,7 +122,7 @@ namespace DB
                     DB.conn.Open();
                 if (base.cmd.Connection.State != System.Data.ConnectionState.Open)
                     base.cmd.Connection = DB.conn;
-                 item = base.cmd.ExecuteNonQuery();
+                 num = base.cmd.ExecuteNonQuery();
             }
             catch (Exception e)
             {
@@ -134,7 +134,7 @@ namespace DB
                 if (DB.conn.State == System.Data.ConnectionState.Open)
                     DB.conn.Close();
             }
-            return (T)item;
+            return num;
         }
         public int Insert(Dictionary<string, string> FindValue) 
         {

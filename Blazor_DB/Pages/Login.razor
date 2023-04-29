@@ -43,7 +43,7 @@
     private async Task CheckLogin()
     {
         CustomerDB cdb = new CustomerDB();
-        Customer customer = await cdb.login(customerID, customerPassword);
+        Customer customer = await cdb.login(customerName, customerPassword);
         if (customer != null)
         {
             await MySession.SetAsync("customerSession", customer);
