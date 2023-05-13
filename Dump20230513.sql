@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
 --
--- Host: localhost    Database: custom_db
+-- Host: 127.0.0.1    Database: custom_db
 -- ------------------------------------------------------
--- Server version	8.0.29
+-- Server version	8.0.33
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,11 +23,11 @@ DROP TABLE IF EXISTS `customers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `customers` (
-  `customerID` int NOT NULL,
+  `customerID` int NOT NULL AUTO_INCREMENT,
   `customerName` varchar(45) DEFAULT NULL,
   `customerPassword` varchar(45) NOT NULL,
   PRIMARY KEY (`customerID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (1,'Joedf',''),(2,'yoni',''),(3,'poob',''),(4,'ali',''),(5,'maximizi',''),(7,'Cranjis mcBasketball','dfasdf');
+INSERT INTO `customers` VALUES (1,'Joedf',''),(2,'yoni',''),(3,'poob',''),(4,'ali','hello'),(5,'maximizi',''),(7,'Cranjis mcBasketball','dfasdf');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -48,12 +48,13 @@ DROP TABLE IF EXISTS `gems`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `gems` (
-  `gemID` int NOT NULL,
+  `gemID` int NOT NULL AUTO_INCREMENT,
   `name` varchar(45) DEFAULT NULL,
   `weight` varchar(45) DEFAULT NULL,
   `price` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`gemID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`gemID`),
+  UNIQUE KEY `name_UNIQUE` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -62,7 +63,7 @@ CREATE TABLE `gems` (
 
 LOCK TABLES `gems` WRITE;
 /*!40000 ALTER TABLE `gems` DISABLE KEYS */;
-INSERT INTO `gems` VALUES (1,'ruby','2.5','400'),(2,'diamond','1.2','600'),(3,'emerald','3.4','500'),(4,'opal','1.3','700'),(5,'booby','0.2','100');
+INSERT INTO `gems` VALUES (1,'ruby','2.5','400'),(2,'diamond','1.2','600'),(3,'emerald','3.4','500'),(4,'opal','1.3','700'),(5,'booby','0.2','100'),(6,'sapphire','1.5','200'),(7,'amethyst','0.7','50'),(8,'topaz','0.8','75'),(9,'aquamarine','1.0','125'),(10,'peridot','0.5','40'),(11,'apatite','1.2','60'),(12,'hemimorphite','2.8','300'),(13,'iolite','3.1','250'),(14,'kyanite','2.4','200'),(15,'maw-sit-sit','2.9','350'),(65,'garnet','0.8','95'),(66,'citrine','0.95','120'),(67,'spinel','1.1','195'),(68,'tanzanite','1.05','240'),(69,'tourmaline','0.85','160'),(70,'zircon','0.97','130'),(71,'moonstone','0.58','70'),(72,'morganite','0.95','220'),(73,'turquoise','0.88','120'),(74,'sodalite','1.25','140'),(75,'hematite','1.15','75'),(76,'azurite','0.68','100'),(77,'malachite','0.83','80'),(78,'obsidian','1.35','90'),(79,'pyrite','1.05','65'),(80,'jasper','0.95','55'),(81,'amber','0.87','210'),(82,'carnelian','0.72','95'),(83,'labradorite','0.8','135'),(84,'kunzite','1.15','250'),(85,'sunstone','1.05','170'),(86,'fluorite','0.98','120'),(87,'chrysocolla','0.85','90'),(88,'amazonite','0.92','85'),(89,'chalcedony','1.2','110'),(90,'serpentine','1.1','75'),(91,'rhodonite','0.75','80'),(92,'prehnite','0.68','100'),(93,'howlite','0.58','50'),(94,'lapis lazuli','0.88','130'),(95,'agate','0.95','70'),(96,'turritella agate','1.35','95'),(97,'dendritic agate','0.83','80'),(98,'charoite','1.05','220'),(99,'lepidolite','0.95','75'),(100,'kambaba jasper','1.2','95'),(101,'chrysoprase','0.72','110'),(102,'red jasper','1.15','80'),(103,'green aventurine','1.05','55');
 /*!40000 ALTER TABLE `gems` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -82,7 +83,7 @@ CREATE TABLE `orders` (
   KEY `rin_ord_idx` (`ringID`),
   CONSTRAINT `cus_ord` FOREIGN KEY (`customerID`) REFERENCES `customers` (`customerID`),
   CONSTRAINT `rin_ord` FOREIGN KEY (`ringID`) REFERENCES `rings` (`ringID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -103,13 +104,13 @@ DROP TABLE IF EXISTS `rings`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `rings` (
-  `ringID` int NOT NULL,
+  `ringID` int NOT NULL AUTO_INCREMENT,
   `metal` varchar(45) DEFAULT NULL,
   `gemID` int DEFAULT NULL,
   PRIMARY KEY (`ringID`),
   KEY `gem_rin_idx` (`gemID`),
   CONSTRAINT `gem_rin` FOREIGN KEY (`gemID`) REFERENCES `gems` (`gemID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -131,4 +132,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-23 10:33:20
+-- Dump completed on 2023-05-13 19:57:09

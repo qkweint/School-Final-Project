@@ -45,7 +45,7 @@
         if (customer.CustomerID != 0)
         {
             await MySession.SetAsync("customerSession", customer);
-            navigationManager.NavigateTo("/");
+            navigationManager.NavigateTo($"/details/{customer.CustomerID}");
         }
         else
         {

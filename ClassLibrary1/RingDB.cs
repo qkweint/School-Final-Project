@@ -1,5 +1,6 @@
 ﻿using DB;
 using ModelsClass;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -89,6 +90,30 @@ namespace TablesDB
             val.Add("gemID", ring.gemID.ToString());
             return base.Insert(val) != -1;
         }
+        public int InsertWithID(Ring ring)
+        {
+            Dictionary<string, string> val = new Dictionary<string, string>();
+            val.Add("metal", ring.metal.ToString());
+            val.Add("gemID", ring.gemID.ToString());
+
+            int insertedId = -1;
+            try
+            {
+                base.Insert(val);
+
+                // Get the ID of the last inserted record
+                string query = "SELECT LAST_INSERT_ID()";
+                MySqlCommand cmd = new MySqlCommand(query, DB.DB.conn);
+                insertedId = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.ToString());
+            }
+
+            return insertedId;
+        }
+
         public int Update(Ring ring)
         {
             Dictionary<string, string> val = new Dictionary<string, string>();
@@ -105,6 +130,16 @@ namespace TablesDB
             Dictionary<string, string> param = new Dictionary<string, string>();
             param.Add("ringID", ring.ringID.ToString());
             return base.Delete(param);
+        }
+        public string GetRingName(int id)
+        {
+            GemDB gdb = new GemDB();
+            RingDB rdb = new RingDB();
+            Ring ring = rdb.SelectByPk(id);
+            string s = "";
+            s += ring.metal.ToString();
+            s += gdb.SelectByPk(ring.gemID).name;
+            return s;
         }
 
         

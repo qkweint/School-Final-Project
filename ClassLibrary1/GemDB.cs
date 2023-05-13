@@ -20,8 +20,8 @@ namespace TablesDB
             Gem g = new Gem();
             g.gemID = int.Parse(row[0].ToString());
             g.name = row[1].ToString();
-            g.weight = double.Parse(row[3].ToString());
-            g.price = int.Parse(row[4].ToString());
+            g.weight = double.Parse(row[2].ToString());
+            g.price = int.Parse(row[3].ToString());
             return g;
         }
         protected override async Task<Gem> CreateModelAsync(object[] row)
@@ -29,8 +29,8 @@ namespace TablesDB
             Gem g = new Gem();
             g.gemID = int.Parse(row[0].ToString());
             g.name = row[1].ToString();
-            g.weight = double.Parse(row[3].ToString());
-            g.price = int.Parse(row[4].ToString());
+            g.weight = double.Parse(row[2].ToString());
+            g.price = int.Parse(row[3].ToString());
             return g;
         }
         protected override List<Gem> CreateListModel(List<object[]> rows)

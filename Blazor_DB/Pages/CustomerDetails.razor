@@ -1,0 +1,80 @@
+﻿@using ModelsClass
+@using TablesDB;
+@inject IJSRuntime js
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject ProtectedSessionStorage MySession
+@inject Microsoft.AspNetCore.Components.NavigationManager navigationManager
+
+
+@page "/details/{id:int}"
+@if (c != null && c.CustomerID != id)
+{
+    <p>403: Forbidden</p>
+}
+else
+{
+    @if (list == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table w-50">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Ring ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Order item in list)
+                {
+                    <tr>
+                        <td>@item.orderID</td>
+                        <td>@item.customerID</td>
+                        <td><a href="/ring/@item.ringID">@rdb.GetRingName(item.ringID)</a></td>
+                        <td>
+                            <a class="btn btn-success" href="/@item">Edit</a>
+                            <button class="btn btn-danger" @onclick="@(() => Delete(@item.orderID))">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a class="btn btn-success" href="addCustomer">Add Customer</a>
+    }
+}
+
+@code {
+    List<Order> list;
+    Customer c;
+    CustomerDB cdb = new CustomerDB();
+    RingDB rdb = new RingDB();
+
+    [Parameter] public int id { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        var customerSession = await MySession.GetAsync<Customer>("customerSession");
+        if (customerSession.Success)
+        {
+            c = customerSession.Value;
+            StateHasChanged();
+        }
+        else
+            navigationManager.NavigateTo("login");
+
+        OrderDB odb = new OrderDB();
+        list = (List<Order>)odb.SelectAll($"SELECT * FROM orders WHERE customerID = {c.CustomerID}");
+    }
+    async Task Delete(int id)
+    {
+        OrderDB odb = new OrderDB();
+        Order order = odb.SelectByPk(id);
+        if (await js.InvokeAsync<bool>("confirm"))
+        {
+            odb.Delete(order);
+            OnInitialized();
+        }
+    }
+}

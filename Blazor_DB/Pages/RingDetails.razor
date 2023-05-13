@@ -1,0 +1,46 @@
+﻿@using ModelsClass
+@using TablesDB;
+@inject ProtectedSessionStorage MySession
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject Microsoft.AspNetCore.Components.NavigationManager navigationManager
+
+
+@page "/ring/{Id:int}"
+@if(r == null)
+{
+    <p>Loading...</p>
+}
+else {
+<table>
+    <tr>
+        Ring Metal:
+        <td>@r.metal</td>
+    </tr>
+    <tr>
+        Ring Gem:
+        <td><a href="/gem/@r.gemID">@gdb.SelectByPk(r.gemID).name</a></td>
+    </tr>
+</table>
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+    Ring r;
+    private Customer c;
+    RingDB rdb = new RingDB();
+    GemDB gdb = new GemDB();
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        var customerSession = await MySession.GetAsync<Customer>("customerSession");
+        if (customerSession.Success)
+        {
+            c = customerSession.Value;
+            StateHasChanged();
+        }
+        else
+            navigationManager.NavigateTo("login");
+
+        r = rdb.SelectByPk(Id);
+
+    }
+}

@@ -3,43 +3,100 @@
 @inject IJSRuntime js
 @using ModelsClass
 @using TablesDB
-@inject Customer c
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 @inject ProtectedSessionStorage MySession
-
-@if (checkedLogin == false)
+@inject Microsoft.AspNetCore.Components.NavigationManager navigationManager
+@if(list == null)
 {
-    <p><em>Checking login...</em></p>
-    
+    <p>Loading...</p>
 }
 else
 {
     <div class="form-signin text-center w-50">
         <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Place Order</h1>
-        <input @bind-value="Name" type="text" id="inputEmail" class="form-control m-1" placeholder="ID" required autofocus>
+        <label for="my-dropdown">Select an option:</label>
+        <select @bind="gem" id="my-dropdown" name="my-dropdown">
+            @foreach (Gem item in list)
+            {
+                index++;
+                <option value="@item.name">@item.name</option>
+            }
+        </select>
+        <select @bind="metal" id="my-dropdown" name="Metal">
+            <option value="aluminum">Aluminum</option>
+            <option value="antimony">Antimony</option>
+            <option value="beryllium">Beryllium</option>
+            <option value="brass">Brass</option>
+            <option value="bronze">Bronze</option>
+            <option value="cadmium">Cadmium</option>
+            <option value="copper">Copper</option>
+            <option value="gold">Gold</option>
+            <option value="hafnium">Hafnium</option>
+            <option value="iron">Iron</option>
+            <option value="lead">Lead</option>
+            <option value="lithium">Lithium</option>
+            <option value="magnesium">Magnesium</option>
+            <option value="mercury">Mercury</option>
+            <option value="nickel">Nickel</option>
+            <option value="palladium">Palladium</option>
+            <option value="platinum">Platinum</option>
+            <option value="silver">Silver</option>
+            <option value="sodium">Sodium</option>
+            <option value="tantalum">Tantalum</option>
+            <option value="tin">Tin</option>
+            <option value="titanium">Titanium</option>
+            <option value="tungsten">Tungsten</option>
+            <option value="zinc">Zinc</option>
+            <option value="adamantium">Adamantium</option>
+            <option value="mithril">Mithril</option>
+            <option value="unobtainium">Unobtainium</option>
+
+        </select>
+
 
         <button @onclick="Add" class="btn btn-lg btn-primary btn-block m-1" type="submit">Place</button>
     </div>
 }
-
-
-
 
 @code {
     [Parameter] public int id { get; set; }
     private string Name = "";
     private string Id;
     private Order order;
+    private string gem;
+    private string metal;
+    private int index = 0;
+    Customer c;
+    List<Gem> list;
 
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        var customerSession = await MySession.GetAsync<Customer>("customerSession");
+        if (customerSession.Success)
+        {
+            c = customerSession.Value;
+            StateHasChanged();
+        }
+        else
+            navigationManager.NavigateTo("login");
+        GemDB gdb = new GemDB();
+        list = (List<Gem>)gdb.SelectAll();
+    }
     async Task Add()
     {
         OrderDB orderdb = new OrderDB();
+        GemDB gdb = new GemDB();
         order = new Order();
         order.customerID = c.CustomerID;
-        bool n = orderdb.Insert(order);
-        if (n == true)
+        RingDB rdb = new RingDB();
+        Ring r = new Ring();
+        r.metal = metal;
+        r.gemID = int.Parse(gdb.SelectAll($"SELECT *.gemID FROM gems WHERE name = {gem}").ToString());
+
+        order.ringID = int.Parse(rdb.SelectAll($"SELECT *.ringID FROM rings WHERE ringID = {rdb.InsertWithID(r)}").ToString());
+        if (orderdb.Insert(order))
         {
             await js.InvokeVoidAsync("alert", $"Order Placed!");
             uriHelper.NavigateTo("/");
@@ -50,24 +107,12 @@ else
             uriHelper.NavigateTo("/");
         }
     }
-    bool checkedLogin = false;
-    protected override void OnAfterRender(bool firstRender)
-    {
-        CheckLogin();
-    }
-    async Task<bool> CheckLogin()
-    {
-        Console.WriteLine("Checking if logged in");
-        if (c.CustomerID == 0)
-        {
-            Console.WriteLine("Not logged in");
-            uriHelper.NavigateTo("/login");
-            this.checkedLogin = true;
 
-            return false;
-        }
-        return true;
+    protected async Task OnAfterRenderAsync()
+    {
+        
     }
+
 
     
 
