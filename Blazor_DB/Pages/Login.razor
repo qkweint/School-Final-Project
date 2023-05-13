@@ -6,7 +6,6 @@
 @inject ProtectedSessionStorage MySession
 @inject Microsoft.AspNetCore.Components.NavigationManager navigationManager
 
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -23,7 +22,6 @@
     <button @onclick="CheckLogin" class="btn btn-lg btn-primary btn-block m-1" type="submit">Sign in</button>
     <div class="mt-5 mb-3 text-muted">@s</div>
 </div>
-
 
 @code {
     private string customerName = "";
@@ -44,10 +42,10 @@
     {
         CustomerDB cdb = new CustomerDB();
         Customer customer = await cdb.login(customerName, customerPassword);
-        if (customer != null)
+        if (customer.CustomerID != 0)
         {
             await MySession.SetAsync("customerSession", customer);
-            navigationManager.NavigateTo("placeOrder");
+            navigationManager.NavigateTo("/");
         }
         else
         {

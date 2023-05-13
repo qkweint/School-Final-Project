@@ -8,23 +8,23 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\qkwei\\.nuget\\packages\\": {},
+    "C:\\Users\\dennis\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj",
+      "projectUniqueName": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
       "projectName": "ModelsClass",
-      "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj",
-      "packagesPath": "C:\\Users\\qkwei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\obj\\",
+      "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
+      "packagesPath": "C:\\Users\\dennis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\qkwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

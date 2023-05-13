@@ -18,6 +18,6 @@ namespace ModelsClass
             CustomerName = customerName;
             CustomerPassword = customerPassword;
         }
-        public Customer() { }
+        public Customer() {}
     }
 }

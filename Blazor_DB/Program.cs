@@ -5,7 +5,7 @@ using ModelsClass;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<Customer>();
+builder.Services.AddScoped<Customer>();
 
 var app = builder.Build();
 

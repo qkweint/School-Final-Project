@@ -2,10 +2,12 @@
 @using TablesDB
 @using ModelsClass
 @inject IJSRuntime js
+@inject ProtectedSessionStorage MySession
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject Microsoft.AspNetCore.Components.NavigationManager navigationManager
+
 
 <span class="h1">My Customers</span>
-
-
 @if (list == null)
 {
     <p><em>Loading...</em></p>
@@ -35,15 +37,24 @@ else
     </table>
     <a class="btn btn-success" href="addCustomer">Add Customer</a>
 }
-
-
 @code {
     List<Customer> list;
-    protected override void OnInitialized()
+    private Customer c;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
+        var customerSession = await MySession.GetAsync<Customer>("customerSession");
+        if (customerSession.Success)
+        {
+            c = customerSession.Value;
+            StateHasChanged();
+        }
+        else
+            navigationManager.NavigateTo("login");
+
         CustomerDB customerDB = new CustomerDB();
         list = (List<Customer>)customerDB.SelectAll();
     }
+
     async Task Delete(int id)
     {
         CustomerDB customerDB = new CustomerDB();

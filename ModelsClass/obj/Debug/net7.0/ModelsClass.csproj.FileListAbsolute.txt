@@ -34,3 +34,15 @@ C:\Users\qkwei\source\repos\gadiproj\ModelsClass\obj\Debug\net7.0\ModelsClass.dl
 C:\Users\qkwei\source\repos\gadiproj\ModelsClass\obj\Debug\net7.0\refint\ModelsClass.dll
 C:\Users\qkwei\source\repos\gadiproj\ModelsClass\obj\Debug\net7.0\ModelsClass.pdb
 C:\Users\qkwei\source\repos\gadiproj\ModelsClass\obj\Debug\net7.0\ref\ModelsClass.dll
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\bin\Debug\net7.0\ModelsClass.deps.json
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\bin\Debug\net7.0\ModelsClass.dll
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\bin\Debug\net7.0\ModelsClass.pdb
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\ModelsClass.csproj.AssemblyReference.cache
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\ModelsClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\ModelsClass.AssemblyInfoInputs.cache
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\ModelsClass.AssemblyInfo.cs
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\ModelsClass.csproj.CoreCompileInputs.cache
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\ModelsClass.dll
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\refint\ModelsClass.dll
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\ModelsClass.pdb
+C:\Users\dennis\source\repos\School-Final-Project\ModelsClass\obj\Debug\net7.0\ref\ModelsClass.dll

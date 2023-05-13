@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj": {}
+    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj": {
+    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj",
+        "projectUniqueName": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj",
         "projectName": "TablesDB",
-        "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\TablesDB.csproj",
-        "packagesPath": "C:\\Users\\qkwei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj",
+        "packagesPath": "C:\\Users\\dennis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\qkwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj": {
-                "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj"
+              "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
+                "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj"
               },
-              "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj": {
-                "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj"
+              "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
+                "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj"
               }
             }
           }
@@ -70,20 +70,20 @@
         }
       }
     },
-    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj": {
+    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj",
+        "projectUniqueName": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
         "projectName": "DBClass",
-        "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\DBClass.csproj",
-        "packagesPath": "C:\\Users\\qkwei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\DB\\obj\\",
+        "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
+        "packagesPath": "C:\\Users\\dennis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\qkwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -135,20 +135,20 @@
         }
       }
     },
-    "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj": {
+    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj",
+        "projectUniqueName": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
         "projectName": "ModelsClass",
-        "projectPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\ModelsClass.csproj",
-        "packagesPath": "C:\\Users\\qkwei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\qkwei\\source\\repos\\gadiproj\\ModelsClass\\obj\\",
+        "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
+        "packagesPath": "C:\\Users\\dennis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\qkwei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

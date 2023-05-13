@@ -4,13 +4,24 @@
 @using ModelsClass
 @using TablesDB
 @inject Customer c
-<div class="form-signin text-center w-50">
-    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Place Order</h1>
-    <input @bind-value="Name" type="text" id="inputEmail" class="form-control m-1" placeholder="ID" required autofocus>
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject ProtectedSessionStorage MySession
 
-    <button @onclick="Add" class="btn btn-lg btn-primary btn-block m-1" type="submit">Place</button>
-</div>
+@if (checkedLogin == false)
+{
+    <p><em>Checking login...</em></p>
+    
+}
+else
+{
+    <div class="form-signin text-center w-50">
+        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Place Order</h1>
+        <input @bind-value="Name" type="text" id="inputEmail" class="form-control m-1" placeholder="ID" required autofocus>
+
+        <button @onclick="Add" class="btn btn-lg btn-primary btn-block m-1" type="submit">Place</button>
+    </div>
+}
 
 
 
@@ -39,4 +50,25 @@
             uriHelper.NavigateTo("/");
         }
     }
+    bool checkedLogin = false;
+    protected override void OnAfterRender(bool firstRender)
+    {
+        CheckLogin();
+    }
+    async Task<bool> CheckLogin()
+    {
+        Console.WriteLine("Checking if logged in");
+        if (c.CustomerID == 0)
+        {
+            Console.WriteLine("Not logged in");
+            uriHelper.NavigateTo("/login");
+            this.checkedLogin = true;
+
+            return false;
+        }
+        return true;
+    }
+
+    
+
 }

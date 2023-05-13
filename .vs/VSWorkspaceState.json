@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Blazor_DB",
+    "\\Blazor_DB\\Pages",
+    "\\ClassLibrary1",
     "\\DBproject"
   ],
-  "SelectedNode": "\\DBproject\\DBproject.sln",
+  "SelectedNode": "\\Blazor_DB\\Pages\\Login.razor",
   "PreviewInSolutionExplorer": false
 }
