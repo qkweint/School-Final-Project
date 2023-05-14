@@ -92,25 +92,8 @@ namespace TablesDB
         }
         public int InsertWithID(Ring ring)
         {
-            Dictionary<string, string> val = new Dictionary<string, string>();
-            val.Add("metal", ring.metal.ToString());
-            val.Add("gemID", ring.gemID.ToString());
-
-            int insertedId = -1;
-            try
-            {
-                base.Insert(val);
-
-                // Get the ID of the last inserted record
-                string query = "SELECT LAST_INSERT_ID()";
-                MySqlCommand cmd = new MySqlCommand(query, DB.DB.conn);
-                insertedId = Convert.ToInt32(cmd.ExecuteScalar());
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error: " + ex.ToString());
-            }
-
+            RingDB rdb = new RingDB();
+            int insertedId = int.Parse(rdb.SelectAll("SELECT * FROM rings ORDER BY ringID DESC LIMIT 1").ToString());
             return insertedId;
         }
 

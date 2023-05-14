@@ -16,14 +16,15 @@ else
         <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Place Order</h1>
         <label for="my-dropdown">Select an option:</label>
-        <select @bind="gem" id="my-dropdown" name="my-dropdown">
+        <select @bind="gem" @onselectionchange=OnInitialized id="my-dropdown" name="my-dropdown">
             @foreach (Gem item in list)
             {
-                index++;
-                <option value="@item.name">@item.name</option>
+                <option value="@item.gemID">@item.name</option>
             }
         </select>
-        <select @bind="metal" id="my-dropdown" name="Metal">
+
+        <p>@gem</p>
+        <select @onselectionchange=OnInitialized @bind ="metal" id="my-dropdown" name="Metal">
             <option value="aluminum">Aluminum</option>
             <option value="antimony">Antimony</option>
             <option value="beryllium">Beryllium</option>
@@ -84,27 +85,31 @@ else
         GemDB gdb = new GemDB();
         list = (List<Gem>)gdb.SelectAll();
     }
-    async Task Add()
+    protected async Task Add()
     {
-        OrderDB orderdb = new OrderDB();
-        GemDB gdb = new GemDB();
-        order = new Order();
-        order.customerID = c.CustomerID;
-        RingDB rdb = new RingDB();
-        Ring r = new Ring();
-        r.metal = metal;
-        r.gemID = int.Parse(gdb.SelectAll($"SELECT *.gemID FROM gems WHERE name = {gem}").ToString());
-
-        order.ringID = int.Parse(rdb.SelectAll($"SELECT *.ringID FROM rings WHERE ringID = {rdb.InsertWithID(r)}").ToString());
-        if (orderdb.Insert(order))
+        if (gem != null)
         {
-            await js.InvokeVoidAsync("alert", $"Order Placed!");
-            uriHelper.NavigateTo("/");
-        }
-        else
-        {
-            await js.InvokeVoidAsync("alert", $"Order wasn't Placed!");
-            uriHelper.NavigateTo("/");
+            OrderDB orderdb = new OrderDB();
+            GemDB gdb = new GemDB();
+            order = new Order();
+            order.customerID = c.CustomerID;
+            RingDB rdb = new RingDB();
+            Ring r = new Ring();
+            r.metal = metal;
+            Gem g = gdb.SelectByPk(int.Parse(gem));
+            r.gemID = g.gemID;
+            int insertID = rdb.InsertWithID(r);
+            order.ringID = insertID;
+            if (orderdb.Insert(order))
+            {
+                await js.InvokeVoidAsync("alert", $"Order Placed!");
+                uriHelper.NavigateTo("/");
+            }
+            else
+            {
+                await js.InvokeVoidAsync("alert", $"Order wasn't Placed!");
+                uriHelper.NavigateTo("/");
+            }
         }
     }
 
