@@ -23,7 +23,7 @@ else
             }
         </select>
 
-        <p>@gem</p>
+        <p>@ringID</p>
         <select @onselectionchange=OnInitialized @bind ="metal" id="my-dropdown" name="Metal">
             <option value="aluminum">Aluminum</option>
             <option value="antimony">Antimony</option>
@@ -57,6 +57,7 @@ else
 
 
         <button @onclick="Add" class="btn btn-lg btn-primary btn-block m-1" type="submit">Place</button>
+        <button @onclick="OnInitialized" class="btn btn-lg btn-primary btn-block m-1" type="submit">Update</button>
     </div>
 }
 
@@ -67,8 +68,8 @@ else
     private Order order;
     private string gem;
     private string metal;
-    private int index = 0;
-    Customer c;
+    private int ringID;
+    private protected Customer c;
     List<Gem> list;
 
 
@@ -83,42 +84,32 @@ else
         else
             navigationManager.NavigateTo("login");
         GemDB gdb = new GemDB();
-        list = (List<Gem>)gdb.SelectAll();
+        list = (List<Gem>)(gdb.SelectAll());
     }
     protected async Task Add()
     {
-        if (gem != null)
+        RingDB rdb = new RingDB();
+        Ring r = new Ring();
+        OrderDB odb = new OrderDB();
+        Order o = new Order();
+        r.metal = metal;
+        r.gemID = int.Parse(gem);
+        ringID = rdb.InsertWithID(r);
+
+        o.ringID = ringID;
+        o.customerID = c.CustomerID;
+        if (odb.Insert(o))
         {
-            OrderDB orderdb = new OrderDB();
-            GemDB gdb = new GemDB();
-            order = new Order();
-            order.customerID = c.CustomerID;
-            RingDB rdb = new RingDB();
-            Ring r = new Ring();
-            r.metal = metal;
-            Gem g = gdb.SelectByPk(int.Parse(gem));
-            r.gemID = g.gemID;
-            int insertID = rdb.InsertWithID(r);
-            order.ringID = insertID;
-            if (orderdb.Insert(order))
-            {
-                await js.InvokeVoidAsync("alert", $"Order Placed!");
-                uriHelper.NavigateTo("/");
-            }
-            else
-            {
-                await js.InvokeVoidAsync("alert", $"Order wasn't Placed!");
-                uriHelper.NavigateTo("/");
-            }
+            await js.InvokeVoidAsync("alert", $"Order Placed!");
+            uriHelper.NavigateTo($"/details/{c.CustomerID}");
         }
+        else
+        {
+            await js.InvokeVoidAsync("alert", $"Order Failed!");
+            uriHelper.NavigateTo($"/details/{c.CustomerID}");
+        }
+
     }
-
-    protected async Task OnAfterRenderAsync()
-    {
-        
-    }
-
-
-    
+  
 
 }

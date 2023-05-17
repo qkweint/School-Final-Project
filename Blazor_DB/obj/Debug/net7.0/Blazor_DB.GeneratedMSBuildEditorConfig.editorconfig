@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Blazor_DB
 build_property.RootNamespace = Blazor_DB
-build_property.ProjectDir = C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB\
+build_property.ProjectDir = C:\Users\dennis\source\repos\School-Final-Project\Blazor_DB\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\CSS\source\repos\School-Final-Project\Blazor_DB
+build_property.MSBuildProjectDirectory = C:\Users\dennis\source\repos\School-Final-Project\Blazor_DB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/App.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/MainLayout.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/AddCustomer.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/AddCustomer.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ3VzdG9tZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/CustomerDetails.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/CustomerDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJEZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/EditDetails.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/EditDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/GemDetails.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/GemDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VtRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/Index.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/Login.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/PlaceOrder.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/PlaceOrder.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhY2VPcmRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/RingDetails.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/RingDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmluZ0RldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/_Imports.razor]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CSS/source/repos/School-Final-Project/Blazor_DB/Pages/_Host.cshtml]
+[C:/Users/dennis/source/repos/School-Final-Project/Blazor_DB/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

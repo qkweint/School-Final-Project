@@ -85,7 +85,6 @@ namespace TablesDB
         public bool Insert(Ring ring)
         {
             Dictionary<string, string> val = new Dictionary<string, string>();
-            val.Add("ringID", ring.ringID.ToString());
             val.Add("metal", ring.metal.ToString());
             val.Add("gemID", ring.gemID.ToString());
             return base.Insert(val) != -1;
@@ -93,14 +92,17 @@ namespace TablesDB
         public int InsertWithID(Ring ring)
         {
             RingDB rdb = new RingDB();
-            int insertedId = int.Parse(rdb.SelectAll("SELECT * FROM rings ORDER BY ringID DESC LIMIT 1").ToString());
-            return insertedId;
+            if (rdb.Insert(ring))
+            {
+                List<Ring> r = (List<Ring>)rdb.SelectAll("SELECT * FROM rings ORDER BY ringID DESC LIMIT 1");
+                return r[0].ringID;
+            }
+            return 0;
         }
 
         public int Update(Ring ring)
         {
             Dictionary<string, string> val = new Dictionary<string, string>();
-            val.Add("ringID", ring.ringID.ToString());
             val.Add("metal", ring.metal.ToString());
             val.Add("gemID", ring.gemID.ToString());
             Dictionary<string, string> param = new Dictionary<string, string>();

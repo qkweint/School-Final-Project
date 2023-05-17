@@ -45,8 +45,13 @@ else
         var customerSession = await MySession.GetAsync<Customer>("customerSession");
         if (customerSession.Success)
         {
-            c = customerSession.Value;
-            StateHasChanged();
+            if (((Customer)(customerSession.Value)).CustomerName == "admin")
+            {
+                c = customerSession.Value;
+                StateHasChanged();
+            }
+            else
+                navigationManager.NavigateTo($"/details/{((Customer)(customerSession.Value)).CustomerID}");
         }
         else
             navigationManager.NavigateTo("login");
