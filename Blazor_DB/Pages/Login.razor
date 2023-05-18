@@ -42,7 +42,13 @@
     List<Customer> list;
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        
+        var customerSession = await MySession.GetAsync<Customer>("customerSession");
+        if (customerSession.Success)
+        {
+            navigationManager.NavigateTo($"/details/{((Customer)(customerSession.Value)).CustomerID}");
+        }
+        else
+            navigationManager.NavigateTo("login");
 
         CustomerDB customerDB = new CustomerDB();
         list = (List<Customer>)customerDB.SelectAll();

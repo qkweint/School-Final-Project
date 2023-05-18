@@ -38,3 +38,11 @@ C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\TablesDB.pdb
 C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\DBClass.pdb
 C:\Users\CSS\source\repos\DBproject\bin\Debug\net7.0\ModelsClass.pdb
 C:\Users\CSS\source\repos\DBproject\obj\Debug\net7.0\Console MainProject.csproj.CopyComplete
+C:\Users\CSS\source\repos\School-Final-Project\DBproject\obj\Debug\net7.0\Console MainProject.csproj.AssemblyReference.cache
+C:\Users\CSS\source\repos\School-Final-Project\DBproject\obj\Debug\net7.0\Console MainProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CSS\source\repos\School-Final-Project\DBproject\obj\Debug\net7.0\Console MainProject.AssemblyInfoInputs.cache
+C:\Users\CSS\source\repos\School-Final-Project\DBproject\obj\Debug\net7.0\Console MainProject.AssemblyInfo.cs
+C:\Users\CSS\source\repos\School-Final-Project\DBproject\obj\Debug\net7.0\Console MainProject.csproj.CoreCompileInputs.cache
+C:\Users\CSS\source\repos\School-Final-Project\DBproject\obj\Debug\net7.0\Console MainProject.dll
+C:\Users\CSS\source\repos\School-Final-Project\DBproject\obj\Debug\net7.0\refint\Console MainProject.dll
+C:\Users\CSS\source\repos\School-Final-Project\DBproject\obj\Debug\net7.0\Console MainProject.pdb

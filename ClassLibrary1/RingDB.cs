@@ -122,7 +122,7 @@ namespace TablesDB
             RingDB rdb = new RingDB();
             Ring ring = rdb.SelectByPk(id);
             string s = "";
-            s += ring.metal.ToString();
+            s += ring.metal.ToString() + "";
             s += gdb.SelectByPk(ring.gemID).name;
             return s;
         }

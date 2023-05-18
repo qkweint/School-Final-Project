@@ -1,42 +1,45 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\Blazor_DB\\Blazor_DB.csproj": {}
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\Blazor_DB\\Blazor_DB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\Blazor_DB\\Blazor_DB.csproj": {
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\Blazor_DB\\Blazor_DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\Blazor_DB\\Blazor_DB.csproj",
+        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\Blazor_DB\\Blazor_DB.csproj",
         "projectName": "Blazor_DB",
-        "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\Blazor_DB\\Blazor_DB.csproj",
-        "packagesPath": "C:\\Users\\dennis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\Blazor_DB\\obj\\",
+        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\Blazor_DB\\Blazor_DB.csproj",
+        "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\Blazor_DB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {
-                "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj"
+              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {
+                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj"
               },
-              "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
-                "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj"
+              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
+                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj"
               }
             }
           }
@@ -73,39 +76,42 @@
         }
       }
     },
-    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj",
+        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj",
         "projectName": "TablesDB",
-        "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj",
-        "packagesPath": "C:\\Users\\dennis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\TablesDB.csproj",
+        "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
-                "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj"
+              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
+                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj"
               },
-              "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
-                "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj"
+              "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
+                "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj"
               }
             }
           }
@@ -139,28 +145,31 @@
         }
       }
     },
-    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
+        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
         "projectName": "DBClass",
-        "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
-        "packagesPath": "C:\\Users\\dennis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\DB\\obj\\",
+        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\DBClass.csproj",
+        "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -204,28 +213,31 @@
         }
       }
     },
-    "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
+    "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
+        "projectUniqueName": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
         "projectName": "ModelsClass",
-        "projectPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
-        "packagesPath": "C:\\Users\\dennis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dennis\\source\\repos\\School-Final-Project\\ModelsClass\\obj\\",
+        "projectPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\ModelsClass.csproj",
+        "packagesPath": "C:\\Users\\CSS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CSS\\source\\repos\\School-Final-Project\\ModelsClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\dennis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

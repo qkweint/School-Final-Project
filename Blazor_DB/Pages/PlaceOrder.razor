@@ -23,7 +23,6 @@ else
             }
         </select>
 
-        <p>@ringID</p>
         <select @onselectionchange=OnInitialized @bind ="metal" id="my-dropdown" name="Metal">
             <option value="aluminum">Aluminum</option>
             <option value="antimony">Antimony</option>
@@ -57,7 +56,6 @@ else
 
 
         <button @onclick="Add" class="btn btn-lg btn-primary btn-block m-1" type="submit">Place</button>
-        <button @onclick="OnInitialized" class="btn btn-lg btn-primary btn-block m-1" type="submit">Update</button>
     </div>
 }
 
