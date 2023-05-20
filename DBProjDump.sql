@@ -27,7 +27,7 @@ CREATE TABLE `customers` (
   `customerName` varchar(45) DEFAULT NULL,
   `customerPassword` varchar(45) NOT NULL,
   PRIMARY KEY (`customerID`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (1,'Joedf',''),(2,'yoni',''),(3,'poob',''),(4,'ali','hello'),(5,'maximizi',''),(7,'Cranjis mcBasketball','dfasdf');
+INSERT INTO `customers` VALUES (1,'Joedf',''),(2,'yoni',''),(3,'poob',''),(4,'ali','hello'),(5,'maximizi',''),(7,'Cranjis mcBasketball','dfasdf'),(8,'admin','admin');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,7 +54,7 @@ CREATE TABLE `gems` (
   `price` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`gemID`),
   UNIQUE KEY `name_UNIQUE` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -83,7 +83,7 @@ CREATE TABLE `orders` (
   KEY `rin_ord_idx` (`ringID`),
   CONSTRAINT `cus_ord` FOREIGN KEY (`customerID`) REFERENCES `customers` (`customerID`),
   CONSTRAINT `rin_ord` FOREIGN KEY (`ringID`) REFERENCES `rings` (`ringID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,7 +110,7 @@ CREATE TABLE `rings` (
   PRIMARY KEY (`ringID`),
   KEY `gem_rin_idx` (`gemID`),
   CONSTRAINT `gem_rin` FOREIGN KEY (`gemID`) REFERENCES `gems` (`gemID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +119,7 @@ CREATE TABLE `rings` (
 
 LOCK TABLES `rings` WRITE;
 /*!40000 ALTER TABLE `rings` DISABLE KEYS */;
-INSERT INTO `rings` VALUES (1,'gold',1),(2,'silver',2),(3,'copper',2),(4,'silver',4),(5,'bronze',3),(6,'shwoop',5);
+INSERT INTO `rings` VALUES (1,'gold',1),(2,'silver',2),(3,'copper',2),(4,'silver',4),(5,'bronze',3),(6,'shwoop',5),(7,'bronze',4),(8,'unobtainium',103),(9,'bronze',8),(10,'brass',6),(11,'brass',6),(12,'gold',9),(13,'gold',9),(14,'gold',9),(15,'gold',8),(16,'cadmium',6),(17,'bronze',5),(18,'bronze',4);
 /*!40000 ALTER TABLE `rings` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -132,4 +132,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-13 19:57:09
+-- Dump completed on 2023-05-20  7:40:45
