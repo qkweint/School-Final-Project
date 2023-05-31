@@ -1,9 +1,9 @@
 * INSTALLATION AND RUNNING
 
   * Cloning the repository 
-   * run:
-     *  bash: 
-        * `~$ git clone https://github.com/qkweint/School-Final-Project && cd ./School-Final-Project`
+    * run:
+      *  bash: 
+          *  `~$ git clone https://github.com/qkweint/School-Final-Project && cd ./School-Final-Project`
 
   * Database
 
