@@ -1,14 +1,14 @@
 * INSTALLATION AND RUNNING
 
-** Database
+  * Database
 
-*** Import the .sql file into workbench with the schema name "custom_db"
+    * Import the .sql file into workbench with the schema name "custom_db"
 
-*** database password should be "josh17rog"
+    * database password should be "josh17rog"
 
-** Solution
+  * Solution
 
-*** main .sln file is located within DBProject/
+    * main .sln file is located within DBProject/
 
 
 
