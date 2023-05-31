@@ -2,7 +2,7 @@
 
   * Cloning the repository 
    * run:
-    *  `git clone https://github.com/qkweint/School-Final-Project && cd ./School-Final-Project`
+     *  bash: `~$ git clone https://github.com/qkweint/School-Final-Project && cd ./School-Final-Project`
 
   * Database
 
